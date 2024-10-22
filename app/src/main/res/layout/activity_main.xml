@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="-7dp"
+    tools:layout_editor_absoluteY="67dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="156dp"
+        android:layout_height="129dp"
+        android:src="@drawable/your_logo"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Login"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        app:layout_constraintWidth_percent="0.3"
+        tools:layout_editor_absoluteX="160dp" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="18dp"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="314dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+    <ImageButton
+        android:id="@+id/buttonTikTok"
+        android:layout_width="96dp"
+        android:layout_height="108dp"
+        android:layout_marginEnd="23dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_tiktok"
+        app:layout_constraintEnd_toStartOf="@+id/buttonFacebook"
+        tools:layout_editor_absoluteY="577dp" />
+
+    <ImageButton
+        android:id="@+id/buttonFacebook"
+        android:layout_width="96dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        tools:layout_editor_absoluteX="170dp" />
+
+    <ImageButton
+        android:id="@+id/buttonGmail"
+        android:layout_width="96dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="17dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_gmail"
+        app:layout_constraintStart_toEndOf="@+id/buttonFacebook"
+        tools:layout_editor_absoluteY="577dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="99dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="27dp"
+        android:ems="0"
+        android:inputType="text"
+        android:text="Log in with"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        tools:layout_editor_absoluteX="170dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="181dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Welcome to my App"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="115dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
